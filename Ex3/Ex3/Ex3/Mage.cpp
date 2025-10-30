@@ -1,2 +1,2 @@
 #include <iostream>
-#include "Warrior.h"
+#include "Mage.h"
