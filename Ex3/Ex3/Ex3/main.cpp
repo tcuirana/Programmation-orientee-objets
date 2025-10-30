@@ -27,41 +27,59 @@ int main() {
     hero.AddItem(sword);
     hero.AddItem(Hpotion);
 
-    hero.DisplayInventory();
+    /*hero.DisplayInventory();
     hero.TakeDamage(20);
     hero.Heal(10);
 
-    Space();
+    Space();*/
 
     //WARRIOR
     w->AddItem(mace);
     w->AddItem(Hpotion);
 
-    w->DisplayInventory();
+    /*w->DisplayInventory();
     w->TakeDamage(20);
     w->Heal(10);
 
-    Space();
+    Space(); */
 
 
     //MAGE
     m->AddItem(ring);
     m->AddItem(Hpotion);
     m->AddItem(Mpotion);
-    m->DisplayInventory();
+
+    /*m->DisplayInventory();
     m->TakeDamage(30);
     m->Heal(10);
 
-    Space();
+    Space(); */
 
     
     //GOBLIN
     g->AddItem(knife);
-    g->DisplayInventory();
+
+    /*g->DisplayInventory();
     g->TakeDamage(30);
 
-    Space();
+    Space(); */
 
+    std::cout << "Des Goblins ont attaques un village." << std::endl;
+    std::cout << "Votre mission est de le libérer de ces nuisibles." << std::endl;
+    std::cout << "Choisisser un personnage pour y arriver." << std::endl;
+
+    hero.DisplayInventory();
+    w->DisplayInventory();
+    m->DisplayInventory();
 
     return 0;
 }
+/*
+std::cout << "Des Goblins ont attaques un village." << std::endl;
+std::cout << "Votre mission est de le libérer de ces nuisibles." << std::endl;
+std::cout << "Choisisser un personnage pour y arriver." << std::endl;
+
+hero.DisplayInventory();
+w->DisplayInventory();
+m->DisplayInventory();
+*/
