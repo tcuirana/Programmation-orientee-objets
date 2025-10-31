@@ -1,11 +1,12 @@
 #pragma once
+#include <string>
 class Items
 {
-private:
-	const char* name;
-	int dmg;
 public:
-	Items(const char* n, int dmg);
+	std::string name;
+	int damage;
+
+	Items(std::string n, int d) : name(n), damage(d) {};
 
 	void Display();
 };
