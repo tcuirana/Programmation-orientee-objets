@@ -1,9 +1,12 @@
-#include "Character.h"
 #include <iostream>
+#include "Character.h"
 	
-void Character::Display() const {
-	std::cout << name << " a " << health << " points de vie." << std::endl;
+Character::Character(const std::string& n, int h)
+	: name(n), health(h) {
 }
+
+Character::Display(const string& n, int h) std::cout << name << " a " << health << " points de vie." << std::endl;
+{}
 
 void Character::Heal(Character& charac) const {
 	 .heal += 10;

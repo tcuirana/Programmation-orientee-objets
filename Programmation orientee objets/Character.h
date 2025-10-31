@@ -12,7 +12,9 @@ private:
 	std::vector<Items> inventory;
 
 public :
-	Character(const std::string& n, int h) : name(n), health(h) {}
+	Character(const std::string& n, int h)
+		: name(n), health(h) {
+	}
 
 		
 
