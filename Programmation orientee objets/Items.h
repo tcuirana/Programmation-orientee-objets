@@ -8,6 +8,6 @@ public:
 
 	Items(std::string n, int d) : name(n), damage(d) {};
 
-	void Display();
+	void Display() const;
 };
 

@@ -11,15 +11,24 @@ int main()
 	team.push_back(arthur);		//ou team.push_back(Character("Arthur", 100, 100) 
 	team.push_back(morgane);	//ajoute le Character Arthur avec ses paramètres à la fin de la liste team.
 
-	for (const auto& c : team) {		//Regarde chaque chose dans la liste team qui devient c mais une chose après l'autre par boucle.
+	for (const auto& c : team) {		//Itere sur tous les elements de team et stocke l'element dans c a chaque iteration. (auto = type pris automatiquement selon le type de team (Character, int, float,...)).
 		c.Display();					//Appelle de la fonction Display pour c
 		std::cout << "" << std::endl;
 	}
-
-	//arthur.Display();
 	
 	Items sword("Epee", 10);
-	sword.Display();
+	Items ring("Anneau", 1);
+
+	std::vector<Items>inventory;
+	inventory.push_back(sword);
+	inventory.push_back(ring);
+	
+	for (const auto& i : inventory) {
+		i.Display();
+		std::cout << "" << std::endl;
+	}
+
+	//sword.Display();
 
 	return 0;
 }
