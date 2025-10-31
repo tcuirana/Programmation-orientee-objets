@@ -8,12 +8,17 @@ class Character
 protected:
 	std::string name;
 	int hpMax;
+	int health;
 	std::vector<Item> inventory;
 
 public:
-	Character(std::string n, int hp) : name(n), hpMax(hp) {}
+	Character(const std::string n, int hp) : name(n), hpMax(hp), health(hp) {}
+
+
 
 	void Display();
+	void ItemDisplay();
+	void Heal();
 
 };
 

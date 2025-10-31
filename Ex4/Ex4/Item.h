@@ -11,6 +11,6 @@ private:
 public:
 	Item(std::string n, int v, int d) : name(n), value(v), damage(d) {}
 
-	void Display();
+	void ItemDisplay();
 };
 
