@@ -1,18 +1,21 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <string>
 #include "Items.h"
 
 class Character
 {
 private:
-	const char* name;
+	std::string name;
 	int health;
-
-public :
-	Character(const char* n, int h);
-
 	std::vector<Items> inventory;
 
-	void Display();
+public :
+	Character(const std::string& n, int h) : name(n), health(h) {}
+
+		
+
+	void Display() const;
+	void Heal() const;
 };
