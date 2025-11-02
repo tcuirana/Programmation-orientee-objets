@@ -11,6 +11,6 @@ private:
 public:
 	Potion(const std::string& n, int p, int h) : name(n), price(p), heal(h){}
 
-	void Display() const;
+	void DisplayPotionStats() const;
 };
 
