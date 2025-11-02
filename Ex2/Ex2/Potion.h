@@ -10,6 +10,7 @@ private:
 
 public:
 	Potion(const std::string& n, int p, int h) : name(n), price(p), heal(h){}
+	~Potion(){}
 
 	void DisplayPotionStats() const;
 };

@@ -39,8 +39,8 @@ int main() {
 
 	std::cout << std::endl;
 	
-	for (const auto& p : etale) //affiche tous ce qu'il y a dans la liste etale.
-		p.DisplayPotionStats();
+	//for (const auto& p : etale) //affiche tous ce qu'il y a dans la liste etale.
+		//p.DisplayPotionStats();
 	
 	std::cout << std::endl;
 
@@ -55,16 +55,17 @@ int main() {
 	std::cout << "2.Potion de soin" << std::endl;
 	std::cout << "3.Grande potion de soin" << std::endl << std::endl;
 
-	int i;
-	std::cin >> i;
+	int Potionchoice;
+	std::cin >> Potionchoice;
 
 	std::vector<Potion> player_inventory;
 
-	switch (i)
+	switch (Potionchoice)
 	{
 	case(1):
 		player_inventory.push_back(ppt);
-		etale.erase(etale.begin()+0);
+		//etale.erase(etale.begin());
+		etale[Potionchoice].~Potion();
 		std::cout << std::endl << "Merci pour votre achat !" << std::endl;
 		break;
 	case(2):
