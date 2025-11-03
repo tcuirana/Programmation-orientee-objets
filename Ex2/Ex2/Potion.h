@@ -14,5 +14,7 @@ public:
 
 	void DisplayPotionStats() const;
 	void Displayname() const;
+	int Price();
+	int Heal();
 };
 

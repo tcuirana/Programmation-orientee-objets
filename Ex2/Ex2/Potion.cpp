@@ -8,3 +8,11 @@ void Potion::DisplayPotionStats() const {
 void Potion::Displayname() const {
 	std::cout << name;
 }
+
+int Potion::Price() {
+	return price;
+}
+
+int Potion::Heal() {
+	return heal;
+}
