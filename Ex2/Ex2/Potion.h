@@ -13,5 +13,6 @@ public:
 	~Potion(){}
 
 	void DisplayPotionStats() const;
+	void Displayname() const;
 };
 
