@@ -17,8 +17,5 @@ public:
 
 	virtual void DisplayStats() const;
 	
-	//virtual void DisplayWarriorStats() const;
-	//virtual void DisplayMageStats() const;
-	//virtual void DisplayGoblinStats() const;
 };
 
