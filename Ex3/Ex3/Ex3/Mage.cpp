@@ -3,5 +3,5 @@
 
 void Mage::DisplayStats() const {
 	//DisplayStats();
-	std::cout << name << std::endl << healthPoint << "/" << maxHealthPoint << " HP" << std::endl << manaPoints << "/" << maxManaPoints << " Stamina" << std::endl;
+	std::cout << name << std::endl << healthPoint << "/" << maxHealthPoint << " HP" << std::endl << manaPoints << "/" << maxManaPoints << " MP" << std::endl;
 }
