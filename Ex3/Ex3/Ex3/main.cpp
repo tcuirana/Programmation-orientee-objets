@@ -15,10 +15,11 @@ int main()
 	g->DisplayStats();
 
 	std::vector<Character*> team;
-	team.push_back(w);
+	team.push_back(w); 
 	team.push_back(m);
 
-	//for(team)
+	for (const auto& t : team)	
+		t->DisplayStats();
 
 	return 0;
 }
